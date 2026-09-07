@@ -1,5 +1,5 @@
 import React from 'react'
-import logo from "../assets/logo/logo.jpeg";
+import logo from "../assets/logo/logo.png";
 function Footer() {
   return (
     <>
@@ -17,12 +17,12 @@ function Footer() {
               </div>
 
               <p class="mt-4 max-w-xs text-[#1D7A74] text-2xl">
-                Sanskar Multispeciality Hospital
+                Dream High Coaching Zone® 
               </p>
 
               <ul class="mt-8 flex gap-6">
                 <li>
-                  <a href="https://www.facebook.com/share/1CPX9Cp4dd/" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                  <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
                     <span class="sr-only">Facebook</span>
 
                     <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -32,7 +32,7 @@ function Footer() {
                 </li>
 
                 <li>
-                  <a href="https://www.instagram.com/sanskarmultispecialityhospital?igsh=MXI3MGhxenBzNmh3Yg==" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                  <a href="www.instagram.com/dream_high_coaching_zone/" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
                     <span class="sr-only">Instagram</span>
 
                     <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
@@ -71,26 +71,26 @@ function Footer() {
 
                 <ul class="mt-6 space-y-4 text-sm">
                   <li>
-                    <a href="#" class="text-gray-700 transition hover:opacity-75"> Clinical Service </a>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75"> Special Focus & Guidance </a>
                   </li>
 
                   <li>
-                    <a href="#" class="text-gray-700 transition hover:opacity-75"> General Physician </a>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75"> 100% Result-Oriented Preparation </a>
                   </li>
 
                   <li>
                     <a href="#" class="text-gray-700 transition hover:opacity-75">
-                      Supportive Service
+                     Study Material
                     </a>
                   </li>
 
                   <li>
-                    <a href="#" class="text-gray-700 transition hover:opacity-75"> Digital Integration</a>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75"> Regular Practice Sessions</a>
                   </li>
 
                   <li>
                     <a href="#" class="text-gray-700 transition hover:opacity-75">
-                      Baby Care
+                     Free Notes
                     </a>
                   </li>
                 </ul>
@@ -125,7 +125,7 @@ function Footer() {
                   </li>
 
                   <li>
-                    <a href="#" class="text-gray-700 transition hover:opacity-75"> Appointment </a>
+                    <a href="#" class="text-gray-700 transition hover:opacity-75"> Admission </a>
                   </li>
 
                   <li>
@@ -142,22 +142,22 @@ function Footer() {
 
                   {/* 📞 Call */}
                   <a
-                    href="tel:+915732355833"
+                    href="tel:+918392957807"
                     className="block text-gray-600 hover:text-blue-600"
                   >
-                    📞 +91 5732355833
+                    📞 +91  8392957807
                   </a>
 
                   <a
-                    href="tel:+919536183777"
+                    href="tel:+919012123454"
                     className="block text-gray-600 hover:text-blue-600"
                   >
-                    📞 +91 9536183777
+                    📞 +91 9012123454
                   </a>
 
                   {/* ✉️ Gmail Message Button */}
                   <a
-                    href="mailto:sanskarhospitalbsr@gmail.com?subject=Appointment%20Request&body=Hello%20Hospital%20Team,"
+                    href="mailto:dreamhighcoachingzone@gmail.com?subject=Appointment%20Request&body=Hello%20Coaching%20Team,"
                     className="inline-block mt-3 px-4 py-2 bg-blue-500 text-white rounded hover:bg-red-600"
                   >
                     ✉️ Send Email

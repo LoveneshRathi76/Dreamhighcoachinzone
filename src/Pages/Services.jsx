@@ -1,235 +1,112 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ccu from "../assets/Services/CCU.webp";
-import icu from "../assets/Services/ICU.webp";
-import HDU from "../assets/Services/HDU.webp";
-import NICU from "../assets/Services/NICU.webp";
-import Dialysis from "../assets/Services/Dialysis.webp";
-import Pharmacy from "../assets/Services/Pharmacy.webp";
-import  Pathology from "../assets/Services/Pathology.webp";
-import Delivery from "../assets/Services/Delivery.webp";
-import  Admission from "../assets/Services/Admission.webp";
-import Ambuance from "../assets/hispitalimage/2478.webp";
-import Echo from "../assets/hispitalimage/doctor.webp";
-import  Ventilator from "../assets/Services/Ventilator.webp";
-import  BiPAP from "../assets/Services/BiPAP.webp";
-import  ECG from "../assets/Services/ECG.webp";
-import  ABG from "../assets/Services/ABG.webp";
-import  PFT from "../assets/Services/PFT.webp";
-import  Bronchoscopy from "../assets/Services/Bronchoscopy.webp";
-import  Digital from "../assets/Services/Digital Xray.webp";
-import  TMT from "../assets/Services/TMT.webp";
-import  Holter from "../assets/Services/Holter.webp";
-import  Canteen from "../assets/Services/Canteen.webp";
+import ccu from "../assets/Services/imag1.png";
+import icu from "../assets/Services/imag1.png";
+import HDU from "../assets/Services/imag1.png";
+import NICU from "../assets/Services/imag1.png";
+import  Ventilator from "../assets/Services/imag1.png";
+import  BiPAP from "../assets/Services/imag1.png";
+import  ECG from "../assets/Services/imag1.png";
+import  ABG from "../assets/Services/imag1.png";
+import  PFT from "../assets/Services/imag1.png";
+
 import {
-  FaProcedures,
-  FaHeartbeat,
-  FaHospitalAlt,
-  FaBaby,
-  FaLungs,
-  FaWind,
-  FaVial,
-  FaStethoscope,
-  FaXRay,
-  FaRunning,
-  FaClock,
-  FaFlask,
-  FaPills,
-  FaAmbulance,
-   FaTimes
+  FaChalkboardTeacher,
+  FaLaptop,
+  FaBookOpen,
+  FaClipboardCheck,
+  FaQuestionCircle,
+  FaUserFriends,
+  FaBullseye,
+  FaCompass,
+  FaTrophy,
+  FaTimes
 } from "react-icons/fa";
 
 const services = [
   {
     id: 1,
-    name: "ICU",
-    icon: <FaProcedures />,
-    shortDesc: "24×7 critical care monitoring.",
+    name: "Expert Faculty",
+    icon: <FaChalkboardTeacher />,
+    shortDesc: "Learn from the best, become your best.",
     image: icu,
     fullDesc:
-      "Our ICU is equipped with advanced life-support systems, experienced doctors, and continuous monitoring to handle critical patients safely."
+      "Learn from experienced and qualified teachers who make every concept simple and easy to understand."
   },
   {
     id: 2,
-    name: "CCU",
-    icon: <FaHeartbeat />,
-    shortDesc: "Cardiac critical care unit.",
+    name: "Smart Classes",
+    icon: <FaLaptop />,
+    shortDesc: "Learn smarter, achieve faster.",
     image: ccu,
     fullDesc:
-      "Cardiac critical care unit from industrial processes or the atmosphere into valuable products like chemicals, fuels, and construction materials. This approach reduces net emissions, supports a circular carbon economy, and provides a sustainable alternative to fossil resources."
+      "Interactive and technology-enabled classes designed to make learning engaging, practical, and effective."
   },
   {
     id: 3,
-    name: "HDU",
-    icon: <FaHospitalAlt />,
-    shortDesc: "High dependency care unit.",
+    name: "Study Material",
+    icon: <FaBookOpen />,
+    shortDesc: "Prepare better, perform better.",
     image: HDU,
     fullDesc:
-      "HDU provides advanced care for patients who need close monitoring but not full ICU support."
+      "Well-structured notes, practice sheets, and quality resources for complete and effective preparation."
   },
   {
     id: 4,
-    name: "NICU / PICU",
-    icon: <FaBaby />,
-    shortDesc: "Newborn & child intensive care.",
+    name: "Regular Test Series",
+    icon: <FaClipboardCheck />,
+    shortDesc: "Practice today, succeed tomorrow.",
     image: NICU,
     fullDesc:
-      "Specialized care for newborn babies and children with trained pediatric specialists."
+      "Regular tests help you measure your preparation, improve accuracy, and build exam confidence."
   },
   {
     id: 5,
-    name: "Ventilator",
-    icon: <FaLungs />,
-    shortDesc: "Advanced ventilator support.",
+    name: "Doubt Solving",
+    icon: <FaQuestionCircle />,
+    shortDesc: "Clear your doubts, strengthen your concepts.",
     image: Ventilator,
     fullDesc:
-      "Modern ventilator machines with expert supervision for critical respiratory patients."
+      "Get clear and quick solutions to your doubts with dedicated support from experienced faculty."
   },
   {
     id: 6,
-    name: "BiPAP",
-    icon: <FaWind />,
-    shortDesc: "Non-invasive ventilation support.",
+    name: "Personalized Guidance",
+    icon: <FaUserFriends />,
+    shortDesc: "Your goal, our guidance, your success.",
     image: BiPAP,
     fullDesc:
-      "BiPAP therapy for patients with breathing difficulties without invasive procedures."
+      "Individual attention and performance-based guidance help every student improve and achieve their goals.."
   },
   {
     id: 7,
-    name: "ECG",
-    icon: <FaHeartbeat />,
-    shortDesc: "Heart rhythm monitoring.",
+    name: "Competitive Exam Preparation",
+    icon: <FaBullseye />,
+    shortDesc: "Dream big, prepare with purpose.",
     image: ECG,
     fullDesc:
-      "Accurate ECG tests for heart condition diagnosis by experienced technicians."
+      "Exam-oriented classes, practice questions, and smart strategies designed to help students perform their best."
   },
   {
     id: 8,
-    name: "ABG",
-    icon: <FaVial />,
-    shortDesc: "Arterial blood gas testing.",
+    name: "Career Guidance",
+    icon: <FaCompass />,
+    shortDesc: "Choose the right path for a brighter future.",
     image: ABG,
     fullDesc:
-      "ABG testing for precise assessment of oxygen and carbon dioxide levels."
+      "Expert guidance to help students understand their options and choose the right path for their future."
   },
   {
     id: 9,
-    name: "PFT",
-    icon: <FaStethoscope />,
-    shortDesc: "Pulmonary function testing.",
+    name: "Proven Results",
+    icon: <FaTrophy />,
+    shortDesc: "Hard work today creates success tomorrow.",
     image: PFT,
     fullDesc:
-      "Pulmonary tests to evaluate lung capacity and respiratory health."
-  },
-  {
-    id: 10,
-    name: "Echo",
-    icon: <FaHeartbeat />,
-    shortDesc: "2D Echocardiography.",
-    image: Echo,
-    fullDesc:
-      "Echocardiography imaging to examine heart structure and function."
-  },
-  {
-    id: 11,
-    name: "Bronchoscopy",
-    icon: <FaStethoscope />,
-    shortDesc: "Lung airway examination.",
-    image: Bronchoscopy,
-    fullDesc:
-      "Bronchoscopy for diagnosing lung and airway-related issues."
-  },
-  {
-    id: 12,
-    name: "Digital X-Ray",
-    icon: <FaXRay />,
-    shortDesc: "High quality X-ray imaging.",
-    image: Digital,
-    fullDesc:
-      "Digital X-ray facility with fast, accurate and safe imaging."
-  },
-  {
-    id: 13,
-    name: "TMT",
-    icon: <FaRunning />,
-    shortDesc: "Treadmill stress test.",
-    image: TMT,
-    fullDesc:
-      "TMT for heart performance evaluation under physical stress."
-  },
-  {
-    id: 14,
-    name: "Holter Monitoring",
-    icon: <FaClock />,
-    shortDesc: "24-hour heart monitoring.",
-    image: Holter,
-    fullDesc:
-      "Continuous ECG monitoring for detecting irregular heart rhythms."
-  },
-  {
-    id: 15,
-    name: "Dialysis",
-    icon: <FaFlask />,
-    shortDesc: "Kidney dialysis treatment.",
-    image: Dialysis,
-    fullDesc:
-      "Modern dialysis unit with high safety and hygiene standards."
-  },
-  {
-    id: 16,
-    name: "24×7 Delivery",
-    icon: <FaBaby />,
-    shortDesc: "Round-the-clock maternity care.",
-    image: Delivery,
-    fullDesc:
-      "Safe maternity services with gynecologists and nursing staff."
-  },
-  {
-    id: 17,
-    name: "24×7 Admission",
-    icon: <FaHospitalAlt />,
-    shortDesc: "Emergency admission services.",
-    image: Admission,
-    fullDesc:
-      "Immediate admission facilities for emergency and critical cases."
-  },
-  {
-    id: 18,
-    name: "Operating Theatre",
-    icon: <FaVial />,
-    shortDesc: "A special room in which people are operated on in a hospital",
-    image: Pathology,
-    fullDesc:
-      "An operation theatre (OT) is a specialized, highly sterile, and controlled environment within a hospital designed for surgical procedures. It is designed to maintain strict asepsis to prevent infection and ensure patient safety. "
-  },
-  {
-    id: 19,
-    name: "24×7 Pharmacy",
-    icon: <FaPills />,
-    shortDesc: "Medicine available anytime.",
-    image: Pharmacy,
-    fullDesc:
-      "In-house pharmacy with all essential and emergency medicines."
-  },
-  {
-    id: 20,
-    name: "24×7 Ambulance",
-    icon: <FaAmbulance />,
-    shortDesc: "Emergency ambulance service.",
-    image: Ambuance,
-    fullDesc:
-      "Fully equipped ambulance with trained staff available anytime."
-  },
-  {
-    id: 20,
-    name: "24×7 Canteen",
-   
-    shortDesc: "Canteen Service",
-    image: Canteen,
-    fullDesc:
-      "Canteen used for purchasing subsidezed goods digital point of sale service."
+      "Consistent guidance, focused preparation, and effective learning strategies help students achieve their academic goals."
   }
+  
 ];
 
 
@@ -306,7 +183,7 @@ function Services() {
             loading="lazy"
               src={selectedService.image}
               alt={selectedService.name}
-              className="w-full h-76 object-cover"
+              className="block w-full h-auto max-h-[70vh] object-contain bg-gray-100"
             />
 
             {/* Content */}

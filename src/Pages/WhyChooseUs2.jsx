@@ -2,12 +2,12 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-import doctor1 from "../assets/hispitalimage/doctor.webp";
-import emergency from "../assets/hispitalimage/247.webp";
-import technology from "../assets/hispitalimage/nicu.webp";
-import care from "../assets/hispitalimage/Pasent.webp";
-import affordable from "../assets/hispitalimage/picu.webp";
-import Ambulance2 from "../assets/hispitalimage/2478.webp";
+import doctor1 from "../assets/hispitalimage/image3.jpeg";
+import emergency from "../assets/hispitalimage/img1.jpeg";
+import technology from "../assets/hispitalimage/image2.jpeg";
+import care from "../assets/hispitalimage/image4.jpeg";
+import affordable from "../assets/hispitalimage/image5.jpeg";
+
 const WhyChooseUs2 = () => {
   useEffect(() => {
     AOS.init({ 
@@ -18,35 +18,31 @@ const WhyChooseUs2 = () => {
 
   const cards = [
     {
-      title: "Experienced Doctors",
-      desc: "Highly qualified doctors with years of experience in patient care.",
+      title: "Special Focus & Guidance ",
+      desc: "Special Focus on Below-Average Students and Personalized Guidance We provide extra attention and dedicated support to help every student improve and achieve their academic goals.",
       img: doctor1,
     },
     {
-      title: "24/7 Emergency",
-      desc: "Emergency services available anytime for critical situations.",
+      title: "100% Result-Oriented Preparation",
+      desc: "100% Result in Board Examinations Focused and systematic preparation for Class 10th and 12th Board Examinations.",
       img: emergency,
     },
     {
-      title: "Advanced Technology",
-      desc: "Modern medical equipment for accurate diagnosis and treatment.",
+      title: "Regular Practice Sessions & Assignments",
+      desc: "Regular tests, practice sessions, worksheets, and assignments to strengthen students’ understanding and performance.",
       img: technology,
     },
     {
-      title: "Best Patient Care",
-      desc: "We prioritize comfort, safety, and personalized healthcare.",
+      title: "Free Notes & Study Material",
+      desc: "Well-structured notes, important study material, and assignments provided to support effective learning.",
       img: care,
     },
     {
-      title: "Affordable Treatment",
-      desc: "Quality healthcare services at budget-friendly prices.",
+      title: "Regular Parent-Teacher Meetings",
+      desc: "QRegular interaction between parents, teachers, and students to monitor progress and ensure better coordination for the student’s overall development.",
       img: affordable,
     },
-    {
-      title: "24*7 Ambulance",
-      desc: "Ambulance service available 24*7.",
-      img: Ambulance2,
-    }
+  
     
   ];
 
@@ -60,14 +56,14 @@ const WhyChooseUs2 = () => {
             className="text-3xl md:text-4xl font-bold text-white"
             data-aos="fade-up"
           >
-            Why Choose Our Hospital
+            Why Choose Our Dream High Coaching Zone® 
           </h2>
           <p
             className="text-gray-300 mt-4"
             data-aos="fade-up"
             data-aos-delay="200"
           >
-            Trusted healthcare with modern facilities and expert doctors
+            Providing quality education and expert guidance to help students build strong foundations, achieve academic excellence, and confidently prepare for a brighter future.
           </p>
         </div>
 
@@ -85,7 +81,7 @@ const WhyChooseUs2 = () => {
               loading="lazy"
                 src={card.img}
                 alt={card.title}
-                className="w-full h-48 object-cover"
+                className="block w-full h-auto"
               />
 
               {/* Content */}

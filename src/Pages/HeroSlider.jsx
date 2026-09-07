@@ -1,37 +1,27 @@
 import { useEffect, useState } from "react";
-import img1 from "../assets/slideimg/slide1.webp";
-import img2 from "../assets/slideimg/slide2.webp";
-import img5 from "../assets/slideimg/CCU2.webp";
-import img3 from "../assets/slideimg/OT 1.webp";
-import img4 from "../assets/slideimg/NICU.webp";
+import img1 from "../assets/slideimg/slide4.jpeg";
+import img2 from "../assets/slideimg/slide3.JPG";
+import img3 from "../assets/slideimg/slide1.jpeg";
+
 
 import { Link } from "react-router-dom";
 const slides = [
   {
     image: img1,
-    title: "Sanskar Multispeciality Hospital",
-    subtitle: "Trusted Sanskar Multispeciality Hospital for Your Family",
+    title: "",
+    subtitle: "",
   },
   {
     image: img2,
-    title: "24×7 Emergency Services",
-    subtitle: "We Care When You Need It Most",
+    title: "",
+    subtitle: "W",
   },
   {
     image: img3,
-    title: "Expert Doctors & Modern Care",
-    subtitle: "Your Health Is Our Priority",
-  },
-   {
-    image: img4,
-    title: "Expert Doctors & Modern Care",
-    subtitle: "Your Health Is Our Priority",
-  },
-   {
-    image: img5,
-    title: "Expert Doctors & Modern Care",
-    subtitle: "Your Health Is Our Priority",
-  },
+    title: "",
+    subtitle: "",
+  }
+ 
    
 ];
 
@@ -48,7 +38,7 @@ function HeroSlider() {
   }, []);
 
   return (
-    <div className="relative h-[85vh] w-full overflow-hidden">
+    <div className="relative aspect-4/3 w-full overflow-hidden bg-white md:aspect-auto md:h-[85vh]">
       {slides.map((slide, index) => (
         <div
           key={index}
@@ -60,7 +50,7 @@ function HeroSlider() {
           loading="lazy"
             src={slide.image}
             alt="Hospital"
-            className="w-full h-full object-cover"
+            className="h-full w-full object-contain"
           />
 
           {/* Overlay */}
@@ -72,15 +62,15 @@ function HeroSlider() {
               {slide.subtitle}
             </p>
 
-            <div className="flex gap-4">
+            <div className="flex gap-9 mt-25">
               <Link to="/Appointment" >
                 <button className="bg-[#1D7A74] px-6 py-3 rounded hover:bg-[#1D7A74] transition cursor-pointer">
-                  Book Appointment
+                  Admission
                 </button>
               </Link>
-              <a href="tel:+919536216777">
+              <a href="tel:+9183929 57807">
                 <button className="bg-white text-black px-6 py-3 rounded hover:bg-gray-200 transition cursor-pointer">
-                  Emergency Call
+                   Enquiry Call
                 </button>
               </a>
 
@@ -99,9 +89,6 @@ function HeroSlider() {
               }`}
           ></span>
         ))}
-      </div>
-      <div>
-        <img src={img1} alt="" />
       </div>
     </div>
   );

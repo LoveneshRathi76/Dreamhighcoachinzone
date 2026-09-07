@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo/logo.jpeg";
+import logo from "../assets/logo/logo.png";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
@@ -12,7 +12,7 @@ function Navbar() {
           <div className="flex items-center gap-3">
             <img loading="lazy" src={logo} className="w-10 h-10" />
             <h1 className="text-xl font-bold text-[#1D7A74]">
-              Sanskar Multispeciality Hospital
+              Dream High Coaching Zone® 
             </h1>
           </div>
 
@@ -47,7 +47,7 @@ function Navbar() {
             </li>
              <li className="relative group">
               <Link to="/Doctors" className=" inline-block transition-all duration-300 hover:text-blue-600 group-hover:-translate-y-1 " >
-                Doctors
+                Achievers
               </Link>
 
               {/* underline */}
@@ -67,7 +67,7 @@ function Navbar() {
            
             <li>
               <Link to="/Appointment" className="bg-[#1D7A74] text-white px-4 py-2 rounded ">
-                Appointment
+                Admission
               </Link>
             </li>
           </ul>
@@ -107,7 +107,7 @@ function Navbar() {
               <Link to="/" onClick={() => setOpen(false)}>Home</Link>
               <Link to="/about" onClick={() => setOpen(false)}>About</Link>
               <Link to="/services" onClick={() => setOpen(false)}>Services</Link>
-              <Link to="/doctors" onClick={() => setOpen(false)}>Doctors</Link>
+              <Link to="/doctors" onClick={() => setOpen(false)}>Achievers</Link>
               <Link to="/contact" onClick={() => setOpen(false)}>Contact</Link>
 
               <Link
@@ -115,7 +115,7 @@ function Navbar() {
                 className="bg-[#1D7A74] text-white px-4 py-2 rounded text-center"
                 onClick={() => setOpen(false)}
               >
-                Appointment
+                Admission
               </Link>
             </div>
 

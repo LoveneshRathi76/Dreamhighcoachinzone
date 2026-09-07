@@ -1,12 +1,15 @@
 import { useState } from "react";
-import appointmentImg from "../assets/slideimg/slide1.webp";
+import appointmentImg from "../assets/slideimg/slide1.jpeg";
 
 function Appointment() {
   const [form, setForm] = useState({
-    name: "",
+    studentName: "",
+    fatherName: "",
+    className: "",
     phone: "",
-    doctor: "",
-    date: "",
+    alternatePhone: "",
+    email: "",
+    address: "",
     message: "",
   });
 
@@ -17,21 +20,24 @@ function Appointment() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const whatsappNumber = "7302913211"; // 🔴 Hospital WhatsApp Number
+    const whatsappNumber = "9536216777";
 
     const whatsappMessage = `
-📋 *New Appointment Request*
+  📋 *New Admission Enquiry*
 
-👤 Name: ${form.name}
+  👨‍🎓 Student Name: ${form.studentName}
+  👨‍👧 Father Name: ${form.fatherName}
+  🏫 Class: ${form.className}
 📞 Phone: ${form.phone}
-🩺 Doctor: ${form.doctor}
-📅 Date: ${form.date}
+  📱 Alternate Phone: ${form.alternatePhone || "Not provided"}
+  📧 Email: ${form.email || "Not provided"}
+  🏠 Address: ${form.address}
 
-📝 Problem:
+  📝 Additional Details:
 ${form.message}
     `;
 
-    const whatsappURL = `https://wa.me/${9536216777}?text=${encodeURIComponent(
+    const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
       whatsappMessage
     )}`;
 
@@ -39,10 +45,13 @@ ${form.message}
 
     // reset form
     setForm({
-      name: "",
+      studentName: "",
+      fatherName: "",
+      className: "",
       phone: "",
-      doctor: "",
-      date: "",
+      alternatePhone: "",
+      email: "",
+      address: "",
       message: "",
     });
   };
@@ -54,11 +63,15 @@ ${form.message}
         {/* Heading */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold text-blue-600 mb-4">
-            Book an Appointment
+            Contact us for admission
           </h1>
-          <p className="text-gray-600 text-lg">
-            Book your appointment easily via WhatsApp
+           <p className="text-gray-600 text-lg">
+           <b>Take the First Step Towards Success.... </b> 
           </p>
+          <p className="text-gray-600 text-lg">
+            Book your seat easily via WhatsApp
+          </p>
+          
         </div>
 
         <div className="flex flex-col md:flex-row gap-12 items-center">
@@ -66,9 +79,9 @@ ${form.message}
           {/* Image */}
           <div className="md:w-1/2">
             <img
-            loading="lazy"
+              loading="lazy"
               src={appointmentImg}
-              alt="Hospital Appointment"
+              alt="Dream High Coaching Zone admission"
               className="rounded-xl shadow-lg w-full"
             />
           </div>
@@ -81,13 +94,40 @@ ${form.message}
             >
               <input
                 type="text"
-                name="name"
-                placeholder="Patient Name"
-                value={form.name}
+                name="studentName"
+                placeholder="Student Name"
+                value={form.studentName}
                 onChange={handleChange}
                 required
                 className="border p-3 rounded-lg"
               />
+
+              <input
+                type="text"
+                name="fatherName"
+                placeholder="Father's Name"
+                value={form.fatherName}
+                onChange={handleChange}
+                required
+                className="border p-3 rounded-lg"
+              />
+
+              <select
+                name="className"
+                value={form.className}
+                onChange={handleChange}
+                required
+                className="border p-3 rounded-lg"
+              >
+                <option value="">Select Class</option>
+                <option>Class 6</option>
+                <option>Class 7</option>
+                <option>Class 8</option>
+                <option>Class 9</option>
+                <option>Class 10</option>
+                <option>Class 11</option>
+                <option>Class 12</option>
+              </select>
 
               <input
                 type="tel"
@@ -99,40 +139,37 @@ ${form.message}
                 className="border p-3 rounded-lg"
               />
 
-              <select
-                name="doctor"
-                value={form.doctor}
+              <input
+                type="tel"
+                name="alternatePhone"
+                placeholder="Alternate Phone Number"
+                value={form.alternatePhone}
                 onChange={handleChange}
-                required
                 className="border p-3 rounded-lg"
-              >
-                <option value="">Select Doctor</option>
-                <option>Dr. Anil Chauhan</option>
-                <option>Dr. Alka</option>
-                <option>Dr. Arif Kamalr</option>
-                <option>Dr. Parag Agarwal</option>
-                <option>Dr. Vijay Swarup Gautam</option>
-                <option>Dr. Hoshiyar Singh</option>
-                <option>Dr. Lakshit Kumar</option>
-                <option>Dr. Vivek Garg</option>
-                <option>Dr. Ashish Acharya</option>
-                <option>Dr. Narendra Kumar</option>
-                <option>Dr. T.B. Singh</option>
-                <option>Dr. Rahul Gupta</option>
-              </select>
+              />
 
               <input
-                type="date"
-                name="date"
-                value={form.date}
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                value={form.email}
+                onChange={handleChange}
+                className="border p-3 rounded-lg"
+              />
+
+              <input
+                type="text"
+                name="address"
+                placeholder="Address"
+                value={form.address}
                 onChange={handleChange}
                 required
-                className="border p-3 rounded-lg"
+                className="border p-3 rounded-lg md:col-span-2"
               />
 
               <textarea
                 name="message"
-                placeholder="Describe health issue"
+                placeholder="Additional Details (Optional)"
                 value={form.message}
                 onChange={handleChange}
                 rows="4"

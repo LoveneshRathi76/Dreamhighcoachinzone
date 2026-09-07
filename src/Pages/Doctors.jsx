@@ -1,116 +1,37 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-// Doctor Images
-import anil from "../assets/doctors/anil.webp";
-import alka from "../assets/doctors/alka.webp";
-import narendra from "../assets/doctors/narendra.webp";
-import vijay from "../assets/doctors/vijay.webp";
-import hoshiyar from "../assets/doctors/hosiyar.webp";
-import pragya from "../assets/doctors/parag.webp";
-import lakshit from "../assets/doctors/lakshit.webp";
-import vivek from "../assets/doctors/vivek.webp";
-import ashish from "../assets/doctors/ashish.webp";
-import tp from "../assets/doctors/tp.webp";
-import rahul from "../assets/doctors/rahul.webp";
-import arif from "../assets/doctors/arif.webp";
+import achieversImage from "../assets/slideimg/slide1.jpeg";
+import achieverImage1 from "../assets/video/9.png";
+import achieverImage2 from "../assets/video/9 (2).png";
+import achieverImage3 from "../assets/video/5.png";
+import achieverImage4 from "../assets/video/11.png";
+import achieverImage5 from "../assets/video/10.png";
+import achieverImage6 from "../assets/video/10 (2).png";
+import achieversVideo1 from "../assets/video/coaching 1.mov";
+import achieversVideo2 from "../assets/video/coaching 2.mov";
+import achieversVideo3 from "../assets/video/coaching 3.mov";
+import achieversVideo4 from "../assets/video/coaching 4.mov";
 
-// Doctors Data
-const doctors = [
-  {
-    name: "Dr. Anil Chauhan",
-    qualification: "MBBS, MD, DCC, (Cardiology)",
-    speciality: "Managing Director",
-    image: anil,
-    about: "More than 18+ years of experience in treating acute and chronic medical diseases with patient-centered care.",
-  },
-  {
-    name: "Dr. Alka",
-    qualification: "MBBS, DGO (Gynecologist)",
-    speciality: "Medical Director",
-    image: alka,
-    about: "More than 18+ years of experience in treating acute and chronic medical diseases with patient-centered care.",
-  },
-  {
-    name: "Dr. Arif Kamal",
-    qualification: "MBBS, MS (OrthopedicSurgeon) ",
-    speciality: "Orthopedic Specialist",
-    image: arif,
-    about: "More than 18+ years of experience in treating acute and chronic medical diseases with patient-centered care.",
-  },
-   {
-    name: "Dr. Parag Agarwal",
-    qualification: "MBBS, MS (General Surgeon)",
-    speciality: "General & Laparoscopic Surgeon",
-    image: pragya,
-    about: "More than 10+ years of experience in treating acute and chronic medical diseases with patient-centered care.",
-  },
- 
-  {
-    name: "Dr. Vijay Swarup Gautam",
-    qualification: "MBBS, MD, DCH (Pediatrician)",
-    speciality: "Pediatrician",
-    image: vijay,
-    about: "More than 18+ years of experience in treating acute and chronic medical diseases with patient-centered care.",
-  },
-  {
-    name: "Dr. Hoshiyar Singh",
-    qualification: "MBBS, MD (General Physician)",
-    speciality: "General Physician",
-    image: hoshiyar,
-    about: "More than 25+ years of experience in treating acute and chronic medical diseases with patient-centered care.",
-  },
- 
-  {
-    name: "Dr. Lakshit Kumar",
-    qualification: "MBBS, MS (ENT Specialist)",
-    speciality: "ENT Specialist",
-    image: lakshit,
-    about: "More than 12+ years of experience in treating acute and chronic medical diseases with patient-centered care.",
-  },
-  {
-    name: "Dr. Vivek Garg",
-    qualification: "MBBS, MS, DNB (Urology)",
-    speciality: "Urologist",
-    image: vivek,
-    about: "More than 15+ years of experience in treating acute and chronic medical diseases with patient-centered care.",
-  },
-  {
-    name: "Dr. Ashish Acharya",
-    qualification: "MBBS, MS, MCH (NeuroSurgeon)",
-    speciality: "Neuro Surgeon",
-    image: ashish,
-    about: "More than 10+ years of experience in treating acute and chronic medical diseases with patient-centered care.",
-  },
-   {
-    name: "Dr. Narendra Kumar",
-    qualification: "MBBS, DMRD (Radiologist)",
-    speciality: "Radiologist",
-    image: narendra,
-    about: "More than 18+ years of experience in treating acute and chronic medical diseases with patient-centered care.",
-  },
-  {
-    name: "Dr. T.B. Singh",
-    qualification: "MBBS, MD (Intensivist)",
-    speciality: "Critical Care Specialist",
-    image: tp,
-    about: "More than 15+ years of experience in treating acute and chronic medical diseases with patient-centered care.",
-  },
-  {
-    name: "Dr. Rahul Gupta",
-    qualification: "MD, DNB (Tuberculosis)",
-    speciality: "Pulmonologist",
-    image: rahul,
-    about: "More than 18+ years of experience in treating acute and chronic medical diseases with patient-centered care.",
-  },
-  
+const achieversVideos = [
+  achieversVideo1,
+  achieversVideo2,
+  achieversVideo3,
+  achieversVideo4,
+];
+
+const achieversImages = [
+  achieversImage,
+  achieverImage1,
+  achieverImage2,
+  achieverImage3,
+  achieverImage4,
+  achieverImage5,
+  achieverImage6,
 ];
 
 function Doctors() {
-  const [selectedDoctor, setSelectedDoctor] = useState(null);
-
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -120,101 +41,65 @@ function Doctors() {
   }, []);
 
   return (
-    <section className="bg-gradient-to-b from-blue-50 to-white py-20">
+    <section className="bg-linear-to-b from-blue-50 to-white py-20">
       <div className="max-w-7xl mx-auto px-4">
-
-        {/* Heading */}
-        <div className="text-center mb-14" data-aos="fade-up">
+        <div className="text-center mb-12" data-aos="fade-up">
           <h1 className="text-4xl font-bold text-blue-600">
-            Our Expert Doctors
+            Our Achievers
           </h1>
-          <p className="text-gray-600 mt-2">
-            Click on doctor to view full profile
+          <p className="text-gray-600 mt-3">
+            Celebrating the hard work and success of our students.
           </p>
         </div>
 
-        {/* Doctors Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-10">
-          {doctors.map((doc, index) => (
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-stretch">
+          {achieversImages.map((image, index) => (
             <div
-              key={index}
-              data-aos="fade-up"
-              data-aos-delay={index * 80}
-              onClick={() => setSelectedDoctor(doc)}
-              className="cursor-pointer bg-white rounded-2xl shadow-md 
-                         hover:shadow-2xl hover:-translate-y-3
-                         transition-all duration-300 overflow-hidden"
+              key={image}
+              className="group flex h-full flex-col overflow-hidden rounded-2xl border border-blue-100 bg-white shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+              data-aos="fade-right"
+              data-aos-delay={index * 100}
             >
-              <div className="h-70 bg-[#1d7a74] flex items-center justify-center">
-                <img
+              <img
                 loading="lazy"
-                  src={doc.image}
-                  alt={doc.name}
-                  className="h-full object-contain scale-95 hover:scale-100 transition duration-300"
-                />
+                src={image}
+                alt={`Dream High Coaching Zone achiever ${index + 1}`}
+                className="block aspect-4/3 w-full bg-gray-100 object-contain"
+              />
+              <div className="flex-1 p-6">
+                <h2 className="text-2xl font-bold text-[#1D7A74]">Achievers Gallery</h2>
+                <p className="text-gray-600 mt-2">Our students&apos; academic achievements and proud moments.</p>
               </div>
+            </div>
+          ))}
 
-              <div className="p-5 text-center">
-                <h3 className="font-bold text-lg">{doc.name}</h3>
-                <p className="text-sm text-gray-500">{doc.qualification}</p>
-                <span className="inline-block mt-3 bg-[#1d7a74] text-white px-5 py-2 rounded-xl text-xs">
-                  {doc.speciality}
-                </span>
+          {achieversVideos.map((video, index) => (
+            <div
+              key={video}
+              className="group flex h-full flex-col overflow-hidden rounded-2xl border border-blue-100 bg-white shadow-lg transition duration-300 hover:-translate-y-1 hover:shadow-2xl"
+              data-aos="fade-left"
+              data-aos-delay={index * 100}
+            >
+              <video
+                controls
+                preload="metadata"
+                className="block aspect-4/3 w-full bg-gray-100 object-contain"
+                src={video}
+              >
+                Your browser does not support the video tag.
+              </video>
+              <div className="flex-1 p-6">
+                <h2 className="text-2xl font-bold text-[#1D7A74]">
+                  Achievers Video {index + 1}
+                </h2>
+                <p className="text-gray-600 mt-2">
+                  Dream High Coaching Zone student highlights.
+                </p>
               </div>
             </div>
           ))}
         </div>
       </div>
-
-      {/* MODAL */}
-      {selectedDoctor && (
-        <div
-          className="fixed inset-0 bg-black bg-opacity-60 flex items-center justify-center z-50"
-          data-aos="zoom-in"
-        >
-          <div className="bg-white w-[90%] md:w-[65%] rounded-xl shadow-xl relative p-6 animate-scaleIn">
-
-            <button
-              onClick={() => setSelectedDoctor(null)}
-              className="absolute top-4 right-4 text-2xl font-bold"
-            >
-              ✕
-            </button>
-
-            <div className="grid md:grid-cols-2 gap-6 items-center">
-              <img
-                src={selectedDoctor.image}
-                className="w-full h-72 object-contain bg-gray-100 rounded"
-                alt=""
-              />
-
-              <div>
-                <h2 className="text-3xl font-bold text-[#1D7A74]">
-                  {selectedDoctor.name}
-                </h2>
-
-                <p className="mt-2">
-                  <b>Qualification:</b> {selectedDoctor.qualification}
-                </p>
-
-                <p className="mt-2">
-                  <b>Speciality:</b> {selectedDoctor.speciality}
-                </p>
-
-                <p className="text-gray-600 mt-4">
-                  {selectedDoctor.about}
-                </p>
-
-                <Link to="/appointment">
-                  <button className="mt-6 bg-[#1D7A74] text-white px-6 py-2 rounded hover:bg-[#155d58]">
-                    Book Appointment
-                  </button>
-                </Link>
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
     </section>
   );
 }

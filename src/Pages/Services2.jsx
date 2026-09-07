@@ -4,53 +4,35 @@ import "aos/dist/aos.css";
 
 const services = [
   {
-    icon: "🫀",
-    title: "Cardiology",
-    desc: "Advanced heart care with expert cardiologists, modern equipment, and 24×7 cardiac emergency services."
+    icon: "📚",
+    title: "Academics",
+    desc: "Classes VI to XII | CBSE & UP Board We provide comprehensive academic coaching for students from Class 6th to Class 12th for both CBSE and UP Board. Strong conceptual learning. Subject-wise academic support" 
   },
   {
-    icon: "🧠",
-    title: "Neurology",
-    desc: "Comprehensive treatment for brain and nervous system disorders using latest diagnostic technology."
+    icon: "🎯",
+    title: "COMPETITIVE EXAMS",
+    desc: "Foundation Preparation for Young Achievers . We prepare students for competitive school-level examinations and foundation programs, including: Navodaya विद्यालय (NVS). Kendriya Vidyalaya Sangathan (KVS).Sainik School Entrance Preparation"
   },
   {
-    icon: "🦴",
-    title: "Orthopedics",
-    desc: "Complete bone, joint, and spine care including fracture treatment, surgery, and rehabilitation."
+    icon: "🧑‍🏫👧",
+    title: "COUNSELING SESSIONS",
+    desc: "Personalized Academic Guidance . We provide counseling and guidance sessions for students who need additional support in their studies or academic development. Identification of weak subjects . Academic performance guidance"
   },
   {
-    icon: "👶",
-    title: "Pediatrics",
-    desc: "Specialized healthcare for infants and children with compassionate and child-friendly care."
+    icon: "🚪",
+    title: "ENTRANCE EXAMS",
+    desc: "Preparing Students for New Opportunities. We provide preparation and guidance for various school entrance examinations at both state and national levels.KVS Entrance Preparation. NVS Entrance Preparation. Sainik School Entrance Preparation"
   },
   {
-    icon: "🩺",
-    title: "General Physician",
-    desc: "Expert diagnosis and treatment for common illnesses, chronic diseases, and preventive healthcare."
-  },
-   {
-    icon: "🚹",
-    title: "Urology",
-    desc: "Advanced care for urinary tract and male reproductive system disorders with modern treatment options."
-  },
-
-  // 🆕 New Services
+    icon: "📝",
+    title: "TEACHING EXAMS",
+    desc: "Empowering Future Educators. We provide specialized preparation for teaching eligibility and recruitment examinations after graduation. Examinations Covered: CTET UPTET Bihar TET Rajasthan TET Mathematics English Other relevant subjects as per examination requirements"
+  }
+  ,
   {
-    icon: "🤰",
-    title: "Gynecology",
-    desc: "Comprehensive women’s healthcare including pregnancy care, gynecological disorders, and maternal services."
-  },
-   {
-    icon: "🧪",
-    title: "Laboratory Tests",
-    desc: "Fully equipped pathology lab providing accurate and fast diagnostic reports under one roof."
-  },
- 
-
-   {
-    icon: "🚑",
-    title: "Emergency Care",
-    desc: "24×7 emergency services with ICU, ambulance, and immediate medical response facilities."
+    icon: "👨‍👩‍👧‍👦",
+    title: "PARENT–TEACHER MEETINGS",
+    desc: "Together for Every Student’s Success. We conduct regular Parent–Teacher Meetings (PTMs) to ensure effective communication and coordination between parents and teachers.Regular discussion of student progress.Identification of academic strengths and weaknesses"
   },
 ];
 
@@ -76,10 +58,10 @@ const Services2 = () => {
           data-aos="fade-up"
         >
           <h2 className="text-4xl font-bold text-gray-800">
-            Our Medical Services
+            Our Services
           </h2>
           <p className="text-gray-600 mt-3">
-            We provide world-class healthcare services with experienced doctors and modern technology.
+           “More Than Coaching - A Complete Pathway to Success.”
           </p>
         </div>
 

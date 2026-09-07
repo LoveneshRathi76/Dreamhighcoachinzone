@@ -18,8 +18,7 @@ function Contact() {
             Contact Us
           </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            We are here to help you 24×7. Feel free to contact Sanskar Multispeciality Hospital
-            for appointments, emergencies, or any medical queries.
+            Providing quality education and expert guidance to help students build strong foundations, achieve academic excellence, and confidently prepare for a brighter future.
           </p>
         </div>
 
@@ -31,7 +30,7 @@ function Contact() {
 
             <h2 className="text-2xl font-semibold text-gray-800 flex items-center gap-3">
               <FaHospital className="text-blue-600" />
-              Sanskar Multispeciality Hospital
+            Dream High Coaching Zone®
             </h2>
 
             {/* Address */}
@@ -40,7 +39,7 @@ function Contact() {
               <div>
                 <h4 className="font-semibold">Address</h4>
                 <p className="text-gray-600">
-                  394, Civil lines, Malka park , Kala Aam,<br />
+                  2A-65/20, LIG, DM Rd, near Indian Gas Agency, Awas Vikas Colony, 1 Colony,<br />
                   Bulandshahr, Uttar Pradesh – 203001
                 </p>
               </div>
@@ -53,17 +52,17 @@ function Contact() {
                 <h4 className="font-semibold">Phone</h4>
 
                 <a
-                  href="tel:+915732355833"
+                  href="tel:+98392957807"
                   className="block text-gray-600 hover:text-blue-600 cursor-pointer"
                 >
-                  +91 5732355833
+                  +91 8392957807
                 </a>
 
                 <a
-                  href="tel:+919536183777"
+                  href="tel:+919012123454"
                   className="block text-gray-600 hover:text-blue-600 cursor-pointer"
                 >
-                  +91 9536183777
+                  +91 9012123454
                 </a>
               </div>
 
@@ -74,7 +73,7 @@ function Contact() {
               <FaEnvelope className="text-blue-600 text-xl mt-1" />
               <div>
                 <h4 className="font-semibold">Email</h4>
-                <p className="text-gray-600">sanskarhospitalbsr@gmail.com</p>
+                <p className="text-gray-600">dreamhighcoachingzone@gmail.com</p>
               </div>
             </div>
 
@@ -83,7 +82,7 @@ function Contact() {
               <FaClock className="text-blue-600 text-xl mt-1" />
               <div>
                 <h4 className="font-semibold">Working Hours</h4>
-                <p className="text-gray-600">24 × 7 Emergency Services</p>
+                
                 <p className="text-gray-600">Open Time - 10 AM </p>
                 <p className="text-gray-600">Monday to Saturday </p>
               </div>
@@ -138,7 +137,7 @@ function Contact() {
   type="button"
   onClick={() => {
     window.location.href =
-      "mailto:sanskarhospitalbsr@gmail.com?subject=Appointment%20Request&body=Hello%20Hospital%20Team,";
+      "mailto:dreamhighcoachingzone@gmail.com?subject=Appointment%20Request&body=Hello%20Coaching%20Team,";
   }}
   className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition"
 >

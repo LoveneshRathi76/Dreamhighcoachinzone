@@ -1,59 +1,40 @@
 import React from "react";
 
 // yahan apni images laga dena
-import infraImg from "../assets/hispitalimage/hr.webp";
-import doctorImg from "../assets/hispitalimage/doctor2.webp";
-import labImg from "../assets/hispitalimage/nicu.webp";
-import emergencyImg from "../assets/hispitalimage/247.webp";
-import affordableImg from "../assets/hispitalimage/picu.webp";
-import Ambulance from "../assets/hispitalimage/2478.webp";
-import Card from "../assets/hispitalimage/Card.webp";
+
+import doctorImg from "../assets/slideimg/slide3.JPG";
+import labImg from "../assets/slideimg/slide1.jpeg";
+import emergencyImg from "../assets/Aboutimage/image3.png";
+import affordableImg from "../assets/slideimg/slide4.jpeg";
+
 const features = [
  
   {
-    icon: "👨‍⚕️",
-    title: "Experienced Doctors",
-    desc: "Highly qualified and experienced doctors across multiple specialties delivering compassionate and reliable care.",
+    icon: "👨‍🏫",
+    title: "Expert Teachers, Better Learning",
+    desc: "Learn from highly qualified and experienced teachers dedicated to helping students achieve academic excellence and build a successful future.",
     image: doctorImg,
   },
   {
-    icon: "🧪",
-    title: "Modern Lab Facilities",
-    desc: "Fully automated pathology and diagnostic labs delivering fast, accurate and reliable test reports.",
+    icon: "🎓",
+    title: "Quality Education",
+    desc: "Comprehensive study material, clear concepts, and effective teaching methods designed for better academic performance.",
     image: labImg,
   },
   {
-    icon: "🚑",
-    title: "24×7 Emergency Care",
-    desc: "Round-the-clock emergency services with ICU, ambulance support and rapid medical response.",
+    icon: "🤝",
+    title: "Personalized Guidance",
+    desc: "Individual attention and regular feedback help every student identify weaknesses and improve their performance..",
     image: emergencyImg,
   },
   {
-    icon: "💊",
-    title: "Affordable Treatment",
-    desc: "High-quality healthcare services offered at affordable prices without compromising treatment quality.",
+    icon: "🏆",
+    title: "Proven Results",
+    desc: "Regular tests, performance analysis, and expert guidance help students stay prepared and achieve their academic goals.",
     image: affordableImg,
-  },
+  }
 
   
-   {
-    icon: "🏥",
-    title: "H.R. Department",
-    desc: "HR departments require concise, professional communication for recruitment, onboarding, and  key ôf management.",
-    image: infraImg,
-  },
-  {
-    icon: "🏥",
-    title: "PMJAY Department",
-    desc: "The Ayushman Bharat - Pradhan Mantri Jan Arogya Yojana (AB PM-JAY), commonly known as the Ayushman Card scheme, is one of the world's largest health assurance schemes, providing significant financial relief for healthcare expenses in India Here are the key points regarding the Ayushman Card based on the latest information:",
-    image: Card,
-  },
-  {
-    icon: "🚑",
-    title: "24×7 Ambulance",
-    desc: "Round-the-clock emergency services with ICU, ambulance support and rapid medical response.",
-    image: Ambulance,
-  }
 ];
 
 const WhyChooseUs = () => {
@@ -67,8 +48,11 @@ const WhyChooseUs = () => {
             Why Choose Our Hospital
           </h2>
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
-            When it comes to choosing a hospital, one thing is clear: quality counts first. With more than one decade of tradition, excellence and quality in providing medical care in a comfortable and convenient environment, we at Sanskar Multispeciality Hospital bring peace of mind for the thousands of patients we care about every day with the help of our doctors, specialist, nurses and paramedical staff.
-            <br /> We focus on offering a wide range of consistent high quality and up-to-date medical services that allow us to improve the health of the communities we serve with compassion and sensitivity to the individual needs of our patients and their families. Sanskar Multispeciality Hospital was established by Dr. Anil Chauhan & Dr Alka Chauhan, after its establishment & in no time the hospital has established itself as one of the premiere centre providing excellent out patient services and surgery. After years of service, our dream is to provide the excellent care to a larger mass affected in the vision and subsequent establishment of Sanskar Hospital.
+          Dream High Coaching Zone is a dedicated educational institute committed to providing quality education, academic excellence, and comprehensive guidance to students. The institute was established on 15th October 2023 under the visionary guidance and leadership of Mr. Manish Palawat.
+
+With a student-centred approach, Dream High Coaching Zone focuses not only on academic performance but also on developing confidence, discipline, problem-solving abilities, and a strong foundation for a successful future.
+
+Under the guidance of Mr. Manish Palawat, who possesses more than seven years of experience in academics, competitive examination preparation, and student counselling, the institute strives to understand the individual needs of every child. His experience and dedication have helped students receive proper academic direction, career guidance, and motivation to achieve their goals..
           </p>
         </div>
 
@@ -85,7 +69,7 @@ const WhyChooseUs = () => {
                 loading="lazy"
                 src={item.image}
                 alt={item.title}
-                className="rounded-3xl shadow-2xl w-full h-[420px] object-cover"
+                className="rounded-3xl shadow-2xl w-full h-auto object-contain lg:h-[420px] lg:object-cover"
               />
             </div>
 
@@ -105,7 +89,7 @@ const WhyChooseUs = () => {
               {/* small trust card */}
               <div className="mt-8 bg-white rounded-xl shadow-md p-5 w-fit">
                 <p className="text-[#1D7A74] font-semibold">
-                  ✔ Trusted by Thousands of Patients
+                  ✔ Trusted by Hundreds of Students
                 </p>
               </div>
             </div>
