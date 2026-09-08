@@ -1,40 +1,44 @@
 import React from "react";
-import img1 from "../assets/Ratingimg/img1.jpeg";
-import img2 from "../assets/Ratingimg/img2.jpeg";
-import img3 from "../assets/Ratingimg/img3.jpeg";
-import img4 from "../assets/Ratingimg/img4.jpeg";
-import img5 from "../assets/Ratingimg/img5.jpeg";
+
+const studentImages = [
+  "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=300&q=80",
+  "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=300&q=80",
+  "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=300&q=80",
+  "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=300&q=80",
+  "https://images.unsplash.com/photo-1504593811423-6dd665756598?auto=format&fit=crop&w=300&q=80",
+];
+
 function Reviews() {
   const reviews = [
     {
-      name: "Rohit Sharma",
+      name: "Aarav Sharma",
       rating: 5,
-      comment: "Doctors are very professional and supportive.",
-      image: img1,
+      comment: "Coaching is excellent and the teachers explain every concept clearly. My confidence improved a lot.",
+      image: studentImages[0],
     },
     {
-      name: "Yash Verma",
+      name: "Diya Verma",
       rating: 4,
-      comment: "Clean hospital and polite staff. Good experience overall.",
-      image: img2,
+      comment: "Very supportive environment and regular tests helped me stay focused and prepared.",
+      image: studentImages[1],
     },
     {
-      name: "Amit Singh",
+      name: "Rohan Singh",
       rating: 5,
-      comment: "Emergency services are excellent and fast.",
-      image: img3,
+      comment: "The faculty is very helpful and the study strategy is perfect for board exam preparation.",
+      image: studentImages[2],
     },
     {
-      name: "Rahul Agarwal",
+      name: "Priya Agarwal",
       rating: 4,
-      comment: "Doctors explained everything very clearly.",
-      image: img4,
+      comment: "Strong guidance and friendly behavior by teachers made learning enjoyable and stress-free.",
+      image: studentImages[3],
     },
     {
-      name: "Sanjay Kumar",
+      name: "Karan Kumar",
       rating: 5,
-      comment: "Best hospital in this area. Highly recommended.",
-      image: img5,
+      comment: "Best coaching center for academic growth. Highly recommended for serious students.",
+      image: studentImages[4],
     },
   ];
 
@@ -45,10 +49,10 @@ function Reviews() {
         {/* Heading */}
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-blue-600 mb-3">
-            Patient Reviews
+            Student Reviews
           </h2>
           <p className="text-gray-600">
-            What our patients say about our hospital
+            What our students say about our coaching
           </p>
         </div>
 

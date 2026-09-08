@@ -39,7 +39,7 @@ const WhyChooseUs2 = () => {
     },
     {
       title: "Regular Parent-Teacher Meetings",
-      desc: "QRegular interaction between parents, teachers, and students to monitor progress and ensure better coordination for the student’s overall development.",
+      desc: "Regular interaction between parents, teachers, and students to monitor progress and ensure better coordination for the student’s overall development.",
       img: affordable,
     },
   

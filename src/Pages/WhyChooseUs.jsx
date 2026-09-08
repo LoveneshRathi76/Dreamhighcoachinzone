@@ -4,7 +4,7 @@ import React from "react";
 
 import doctorImg from "../assets/slideimg/slide3.JPG";
 import labImg from "../assets/slideimg/slide1.jpeg";
-import emergencyImg from "../assets/Aboutimage/image3.png";
+import emergencyImg from "../assets/Aboutimage/image3.jpeg";
 import affordableImg from "../assets/slideimg/slide4.jpeg";
 
 const features = [

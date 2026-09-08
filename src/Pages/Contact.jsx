@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   FaMapMarkerAlt,
   FaPhoneAlt,
@@ -7,7 +8,38 @@ import {
 } from "react-icons/fa";
 import MapSection from "./MapSection";
 
+const whatsappNumber = "918392957807";
+
+const defaultFormData = {
+  name: "",
+  email: "",
+  phone: "8392957807",
+  message: "",
+};
+
 function Contact() {
+  const [formData, setFormData] = useState(defaultFormData);
+
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const message = encodeURIComponent(
+      `Hello Coaching Team,\n\n` +
+        `Full Name: ${formData.name}\n` +
+        `Email: ${formData.email}\n` +
+        `Phone: ${formData.phone || "8392957807"}\n` +
+        `Message: ${formData.message}\n`
+    );
+
+    const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${message}`;
+    window.open(whatsappUrl, "_blank");
+  };
+
   return (
     <section className="bg-gray-50 min-h-screen py-16">
       <div className="max-w-7xl mx-auto px-4">
@@ -96,13 +128,17 @@ function Contact() {
               Send Us a Message
             </h2>
 
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label className="block mb-1 text-sm font-medium">Full Name</label>
                 <input
                   type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   placeholder="Enter your name"
                   className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  required
                 />
               </div>
 
@@ -110,8 +146,12 @@ function Contact() {
                 <label className="block mb-1 text-sm font-medium">Email</label>
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   placeholder="Enter your email"
                   className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  required
                 />
               </div>
 
@@ -119,8 +159,12 @@ function Contact() {
                 <label className="block mb-1 text-sm font-medium">Phone</label>
                 <input
                   type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
                   placeholder="Enter phone number"
                   className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  required
                 />
               </div>
 
@@ -128,22 +172,21 @@ function Contact() {
                 <label className="block mb-1 text-sm font-medium">Message</label>
                 <textarea
                   rows="4"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   placeholder="Write your message"
                   className="w-full border rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-600"
+                  required
                 ></textarea>
               </div>
 
-          <button
-  type="button"
-  onClick={() => {
-    window.location.href =
-      "mailto:dreamhighcoachingzone@gmail.com?subject=Appointment%20Request&body=Hello%20Coaching%20Team,";
-  }}
-  className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition"
->
-  Send Message
-</button>
-
+              <button
+                type="submit"
+                className="bg-blue-600 text-white px-8 py-3 rounded-lg hover:bg-blue-700 transition"
+              >
+                Send Message
+              </button>
             </form>
           </div>
 

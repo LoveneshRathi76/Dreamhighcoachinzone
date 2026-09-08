@@ -37,7 +37,7 @@ function Footer() {
                 </li>
 
                 <li>
-                  <a href="www.instagram.com/dream_high_coaching_zone/" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                  <a href="https://www.instagram.com/dream_high_coaching_zone?stkn=MTEwcjcxMTYzZ3J6bg==" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
                     <span class="sr-only">Instagram</span>
 
                     <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
