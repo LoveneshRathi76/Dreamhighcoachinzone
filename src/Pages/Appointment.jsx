@@ -1,5 +1,5 @@
 import { useState } from "react";
-import appointmentImg from "../assets/Aboutimage/contact2.jpeg";
+import appointmentImg from "../assets/Aboutimage/contact2.webp";
 
 function Appointment() {
   const [form, setForm] = useState({

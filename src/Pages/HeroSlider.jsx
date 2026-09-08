@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
-import img1 from "../assets/slideimg/slide.jpeg";
-import img2 from "../assets/slideimg/slide4.jpeg";
-import img3 from "../assets/slideimg/slide3.JPG";
+import img1 from "../assets/slideimg/slide.webp";
+import img2 from "../assets/slideimg/slide4.webp";
+import img3 from "../assets/slideimg/slide3.webp";
 
 
 import { Link } from "react-router-dom";

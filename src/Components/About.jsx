@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImg from "../assets/Aboutimage/about.jpeg"; // apni image yaha rakho
+import aboutImg from "../assets/Aboutimage/about.webp"; // apni image yaha rakho
 import WhyChooseUs from "../Pages/WhyChooseUs";
 
 const About = () => {

@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ccu from "../assets/Services/image2.jpeg";
-import icu from "../assets/Services/image1.jpeg";
-import HDU from "../assets/Services/image3.jpeg";
-import NICU from "../assets/Services/image4.jpeg";
-import  Ventilator from "../assets/Services/image5.jpeg";
-import  BiPAP from "../assets/Services/image6.jpeg";
-import  ECG from "../assets/Services/image7.jpeg";
-import  ABG from "../assets/Services/image8.jpeg";
-import  PFT from "../assets/slideimg/slide1.jpeg";
+import ccu from "../assets/Services/image2.webp";
+import icu from "../assets/Services/image1.webp";
+import HDU from "../assets/Services/image3.webp";
+import NICU from "../assets/Services/image4.webp";
+import  Ventilator from "../assets/Services/image5.webp";
+import  BiPAP from "../assets/Services/image6.webp";
+import  ECG from "../assets/Services/image7.webp";
+import  ABG from "../assets/Services/image8.webp";
+import  PFT from "../assets/slideimg/slide1.webp";
 
 import {
   FaChalkboardTeacher,

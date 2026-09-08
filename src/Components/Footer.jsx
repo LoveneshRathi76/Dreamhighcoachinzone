@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
-import logo from "../assets/logo/logo.png";
+import logo from "../assets/logo/logo.webp";
 function Footer() {
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -14,7 +14,7 @@ function Footer() {
             <div>
               <div className="text-teal-600">
                 <img
-                  src={logo}   // ya ../assets/logo.png (React structure ke hisaab se)
+                  src={logo}
                   alt="Logo"
                   className="h-15 w-auto"
                 />
