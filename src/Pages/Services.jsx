@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ccu from "../assets/Services/imag1.png";
-import icu from "../assets/Services/imag1.png";
-import HDU from "../assets/Services/imag1.png";
-import NICU from "../assets/Services/imag1.png";
-import  Ventilator from "../assets/Services/imag1.png";
-import  BiPAP from "../assets/Services/imag1.png";
-import  ECG from "../assets/Services/imag1.png";
-import  ABG from "../assets/Services/imag1.png";
-import  PFT from "../assets/Services/imag1.png";
+import ccu from "../assets/Services/image2.jpeg";
+import icu from "../assets/Services/image1.jpeg";
+import HDU from "../assets/Services/image3.jpeg";
+import NICU from "../assets/Services/image4.jpeg";
+import  Ventilator from "../assets/Services/image5.jpeg";
+import  BiPAP from "../assets/Services/image6.jpeg";
+import  ECG from "../assets/Services/image7.jpeg";
+import  ABG from "../assets/Services/image8.jpeg";
+import  PFT from "../assets/slideimg/slide1.jpeg";
 
 import {
   FaChalkboardTeacher,
@@ -129,10 +129,10 @@ function Services() {
         {/* Heading */}
         <div className="text-center mb-14" data-aos="fade-up">
           <h1 className="text-4xl font-bold text-blue-600 mb-3">
-            Our Medical Services
+           Our Coaching Services
           </h1>
           <p className="text-gray-600">
-            Complete healthcare facilities under one roof
+          “We provide the right guidance, quality education, and personalized support to help every student succeed.”
           </p>
         </div>
 

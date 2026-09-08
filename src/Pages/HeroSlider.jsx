@@ -14,7 +14,7 @@ const slides = [
   {
     image: img2,
     title: "",
-    subtitle: "W",
+    subtitle: "",
   },
   {
     image: img3,

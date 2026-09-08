@@ -59,10 +59,10 @@ function Contact() {
                 </a>
 
                 <a
-                  href="tel:+919012123454"
+                  href="tel:+915732458616"
                   className="block text-gray-600 hover:text-blue-600 cursor-pointer"
                 >
-                  +91 9012123454
+                  +91 5732458616
                 </a>
               </div>
 

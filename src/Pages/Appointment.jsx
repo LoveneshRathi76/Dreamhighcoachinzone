@@ -20,7 +20,7 @@ function Appointment() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const whatsappNumber = "9536216777";
+    const whatsappNumber = "8392957807";
 
     const whatsappMessage = `
   📋 *New Admission Enquiry*

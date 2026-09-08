@@ -1,6 +1,11 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 import logo from "../assets/logo/logo.png";
 function Footer() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <>
       <footer class="bg-white">
@@ -121,15 +126,27 @@ function Footer() {
 
                 <ul class="mt-6 space-y-4 text-sm">
                   <li>
-                    <a href="#" class="text-gray-700 transition hover:opacity-75"> Contact </a>
+                    <Link to="/" onClick={scrollToTop} className="text-gray-700 transition hover:opacity-75"> Home </Link>
                   </li>
 
                   <li>
-                    <a href="#" class="text-gray-700 transition hover:opacity-75"> Admission </a>
+                    <Link to="/about" onClick={scrollToTop} className="text-gray-700 transition hover:opacity-75"> About </Link>
                   </li>
 
                   <li>
-                    <a href="#" class="text-gray-700 transition hover:opacity-75"> Services </a>
+                    <Link to="/Services" onClick={scrollToTop} className="text-gray-700 transition hover:opacity-75"> Services </Link>
+                  </li>
+
+                  <li>
+                    <Link to="/Doctors" onClick={scrollToTop} className="text-gray-700 transition hover:opacity-75"> Achievers </Link>
+                  </li>
+
+                  <li>
+                    <Link to="/contact" onClick={scrollToTop} className="text-gray-700 transition hover:opacity-75"> Contact </Link>
+                  </li>
+
+                  <li>
+                    <Link to="/appointment" onClick={scrollToTop} className="text-gray-700 transition hover:opacity-75"> Admission </Link>
                   </li>
                 </ul>
               </div>
@@ -149,10 +166,10 @@ function Footer() {
                   </a>
 
                   <a
-                    href="tel:+919012123454"
+                    href="tel:+915732458616"
                     className="block text-gray-600 hover:text-blue-600"
                   >
-                    📞 +91 9012123454
+                    📞 +91 5732458616
                   </a>
 
                   {/* ✉️ Gmail Message Button */}
