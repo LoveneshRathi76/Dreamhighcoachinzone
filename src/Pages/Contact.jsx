@@ -13,7 +13,7 @@ const whatsappNumber = "918392957807";
 const defaultFormData = {
   name: "",
   email: "",
-  phone: "8392957807",
+  phone: "",
   message: "",
 };
 
