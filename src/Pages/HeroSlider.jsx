@@ -2,22 +2,27 @@ import { useEffect, useState } from "react";
 import img1 from "../assets/slideimg/slide.webp";
 import img2 from "../assets/slideimg/slide4.webp";
 import img3 from "../assets/slideimg/slide3.webp";
-
+import img4 from "../assets/slideimg/slide1.webp";
 
 import { Link } from "react-router-dom";
 const slides = [
+  {
+    image: img4,
+    title: "",
+    subtitle: "",
+  },
   {
     image: img1,
     title: "",
     subtitle: "",
   },
   {
-    image: img2,
+    image: img3,
     title: "",
     subtitle: "",
   },
-  {
-    image: img3,
+   {
+    image: img2,
     title: "",
     subtitle: "",
   }

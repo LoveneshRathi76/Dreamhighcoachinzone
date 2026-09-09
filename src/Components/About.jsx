@@ -1,5 +1,5 @@
 import React from "react";
-import aboutImg from "../assets/Aboutimage/about.webp"; // apni image yaha rakho
+import aboutImg from "../assets/Aboutimage/about3.webp"; // apni image yaha rakho
 import WhyChooseUs from "../Pages/WhyChooseUs";
 
 const About = () => {
@@ -42,21 +42,11 @@ const About = () => {
 
             <div>
              
-              <p className="text-gray-600">
-               At Dream High Coaching Zone, we believe that every student has unique potential. Our responsibility is to identify that potential, nurture it with the right guidance, and help every child transform their dreams into achievements.<br></br>
-              </p>
+             
             </div>
              <div>
              
-              <p className="text-gray-600">
-               <br />
- <b>FROM THE CHAIRMAN’S DESK
-
-“Failure is not the end; it is a new beginning in life. It gives you the opportunity to start again with renewed spirit and confidence by learning from the mistakes that led to failure.”
-<br />
-— Mr. Manish Plawat,<br /> (Founder and Chairman) <br />
- Dream High Coaching Zone®  </b>
-              </p>
+              
             </div>
 
           </div>

@@ -157,7 +157,7 @@ ${form.message}
                 placeholder="Alternate Phone (10 digits)"
                 value={form.alternatePhone}
                 onChange={handleChange}
-                required
+                
                 inputMode="numeric"
                 pattern="[0-9]{10}"
                 minLength="10"
@@ -172,7 +172,7 @@ ${form.message}
                 placeholder="Email Address"
                 value={form.email}
                 onChange={handleChange}
-                required
+                
                 className="border p-3 rounded-lg"
               />
 
@@ -192,7 +192,7 @@ ${form.message}
                 value={form.message}
                 onChange={handleChange}
                 rows="4"
-                required
+                
                 className="border p-3 rounded-lg md:col-span-2"
               />
 

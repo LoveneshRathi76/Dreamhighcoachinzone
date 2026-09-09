@@ -21,18 +21,7 @@ const features = [
     desc: "Comprehensive study material, clear concepts, and effective teaching methods designed for better academic performance.",
     image: labImg,
   },
-  {
-    icon: "🤝",
-    title: "Personalized Guidance",
-    desc: "Individual attention and regular feedback help every student identify weaknesses and improve their performance..",
-    image: emergencyImg,
-  },
-  {
-    icon: "🏆",
-    title: "Proven Results",
-    desc: "Regular tests, performance analysis, and expert guidance help students stay prepared and achieve their academic goals.",
-    image: affordableImg,
-  }
+  
 
   
 ];
@@ -45,7 +34,7 @@ const WhyChooseUs = () => {
         {/* Heading */}
         <div className="text-center">
           <h2 className="text-4xl font-bold text-[#0F2A44]">
-            Why Choose Our  Coaching
+            Why Choose Our Dream High Coaching Zone®
           </h2>
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
           Dream High Coaching Zone is a dedicated educational institute committed to providing quality education, academic excellence, and comprehensive guidance to students. The institute was established on 15th October 2023 under the visionary guidance and leadership of Mr. Manish Palawat.

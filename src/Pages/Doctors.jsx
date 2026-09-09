@@ -3,10 +3,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 
-import achieversVideo1 from "../assets/video/coaching 1.mov";
-import achieversVideo2 from "../assets/video/coaching 2.mov";
-import achieversVideo3 from "../assets/video/coaching 3.mov";
-import achieversVideo4 from "../assets/video/coaching 4.mov";
+import achieversVideo1 from "../assets/video/coaching 1.mp4";
+import achieversVideo2 from "../assets/video/coaching 2.mp4";
+import achieversVideo3 from "../assets/video/coaching 3.mp4";
+import achieversVideo4 from "../assets/video/coaching 4.mp4";
 import achieversImage from "../assets/Aboutimage/contact2.webp";
 import achieverImage1 from "../assets/video/9.webp";
 import achieverImage2 from "../assets/video/9 (2).webp";
