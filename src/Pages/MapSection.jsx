@@ -32,7 +32,7 @@ function MapSection() {
               <div className="flex items-start gap-3">
                 <FaMapMarkerAlt className="text-blue-600 mt-1" />
                 <p>
-                  2A-65/20, LIG, DM Rd, near Indian Gas Agency, Awas Vikas Colony, 1 Colony, Bulandshahr, Uttar Pradesh 203001
+                 2A-65/20 LIG, Avas Vikas - 1 Colony, Near Indian Gas Agency, D.M Road, Bulandshahr, Uttar Pradesh -203001
                 </p>
               </div>
 
