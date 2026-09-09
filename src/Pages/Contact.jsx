@@ -71,8 +71,7 @@ function Contact() {
               <div>
                 <h4 className="font-semibold">Address</h4>
                 <p className="text-gray-600">
-                  2A-65/20, LIG, DM Rd, near Indian Gas Agency, Awas Vikas Colony, 1 Colony,<br />
-                  Bulandshahr, Uttar Pradesh – 203001
+                  2A-65/20 LIG, Avas Vikas - 1 Colony, Near Indian Gas Agency, D.M Road, Bulandshahr, Uttar Pradesh -203001
                 </p>
               </div>
             </div>
@@ -115,7 +114,7 @@ function Contact() {
               <div>
                 <h4 className="font-semibold">Working Hours</h4>
                 
-                <p className="text-gray-600">Open Time - 10 AM </p>
+                <p className="text-gray-600">10:00 AM - 5:00 PM </p>
                 <p className="text-gray-600">Monday to Saturday </p>
               </div>
             </div>

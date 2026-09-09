@@ -9,7 +9,7 @@ import  Ventilator from "../assets/Services/image5.webp";
 import  BiPAP from "../assets/Services/image6.webp";
 import  ECG from "../assets/Services/image7.webp";
 import  ABG from "../assets/Services/image8.webp";
-import  PFT from "../assets/slideimg/slide1.webp";
+import  PFT from "../assets/Aboutimage/contact2.webp";
 
 import {
   FaChalkboardTeacher,

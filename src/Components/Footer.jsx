@@ -27,7 +27,7 @@ function Footer() {
 
               <ul class="mt-8 flex gap-6">
                 <li>
-                  <a href="#" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
+                  <a href="https://www.facebook.com/share/1G8SmGTpG7/?mibextid=wwXIfr" rel="noreferrer" target="_blank" class="text-gray-700 transition hover:opacity-75">
                     <span class="sr-only">Facebook</span>
 
                     <svg class="size-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

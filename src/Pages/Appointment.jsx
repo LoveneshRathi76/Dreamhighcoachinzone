@@ -14,7 +14,11 @@ function Appointment() {
   });
 
   const handleChange = (e) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    const phoneValue = name === "phone" || name === "alternatePhone";
+    const formattedValue = phoneValue ? value.replace(/\D/g, "").slice(0, 10) : value;
+
+    setForm({ ...form, [name]: formattedValue });
   };
 
   const handleSubmit = (e) => {
@@ -127,24 +131,38 @@ ${form.message}
                 <option>Class 10</option>
                 <option>Class 11</option>
                 <option>Class 12</option>
+                 <option>Competitive Exams</option>
+                <option>Teaching Exams</option>
+                <option>For Teaching in Institute</option>
               </select>
 
               <input
                 type="tel"
                 name="phone"
-                placeholder="Phone Number"
+                placeholder="Phone Number (10 digits)"
                 value={form.phone}
                 onChange={handleChange}
                 required
+                inputMode="numeric"
+                pattern="[0-9]{10}"
+                minLength="10"
+                maxLength="10"
+                title="Enter a valid 10-digit mobile number"
                 className="border p-3 rounded-lg"
               />
 
               <input
                 type="tel"
                 name="alternatePhone"
-                placeholder="Alternate Phone Number"
+                placeholder="Alternate Phone (10 digits)"
                 value={form.alternatePhone}
                 onChange={handleChange}
+                required
+                inputMode="numeric"
+                pattern="[0-9]{10}"
+                minLength="10"
+                maxLength="10"
+                title="Enter a valid 10-digit mobile number"
                 className="border p-3 rounded-lg"
               />
 
@@ -154,6 +172,7 @@ ${form.message}
                 placeholder="Email Address"
                 value={form.email}
                 onChange={handleChange}
+                required
                 className="border p-3 rounded-lg"
               />
 
@@ -169,10 +188,11 @@ ${form.message}
 
               <textarea
                 name="message"
-                placeholder="Additional Details (Optional)"
+                placeholder="Additional Details"
                 value={form.message}
                 onChange={handleChange}
                 rows="4"
+                required
                 className="border p-3 rounded-lg md:col-span-2"
               />
 

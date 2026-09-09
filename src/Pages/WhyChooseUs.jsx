@@ -3,7 +3,7 @@ import React from "react";
 // yahan apni images laga dena
 
 import doctorImg from "../assets/slideimg/slide3.webp";
-import labImg from "../assets/slideimg/slide1.webp";
+import labImg from "../assets/Aboutimage/contact2.webp";
 import emergencyImg from "../assets/Aboutimage/image3.webp";
 import affordableImg from "../assets/slideimg/slide4.webp";
 
@@ -45,7 +45,7 @@ const WhyChooseUs = () => {
         {/* Heading */}
         <div className="text-center">
           <h2 className="text-4xl font-bold text-[#0F2A44]">
-            Why Choose Our Hospital
+            Why Choose Our  Coaching
           </h2>
           <p className="text-gray-600 mt-4 max-w-2xl mx-auto">
           Dream High Coaching Zone is a dedicated educational institute committed to providing quality education, academic excellence, and comprehensive guidance to students. The institute was established on 15th October 2023 under the visionary guidance and leadership of Mr. Manish Palawat.
